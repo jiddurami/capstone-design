@@ -1,7 +1,7 @@
 function showCategory(category) {
-    const domesticGallery = document.getElementById('domesticGallery');
-    const foreignGallery = document.getElementById('foreignGallery');
-    const allPhotos = document.querySelectorAll('.photo');
+    const domesticGallery = document.getElementById('domesticGallery'); //국내
+    const foreignGallery = document.getElementById('foreignGallery'); //국외
+    const allPhotos = document.querySelectorAll('.photo'); //모든사진
 
     // 모든 사진 숨기기
     allPhotos.forEach(photo => {

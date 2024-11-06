@@ -1,0 +1,14 @@
+.travel-image{
+    width: 200px; height: 200px;
+    object-fit: cover;
+}
+
+.link {
+    color: #7a1dfd; /* 링크 색상 */
+    margin-left: 10px; /* 오른쪽 여백 추가 */
+}
+
+.link:hover {
+    background-color: hsl(218, 100%, 93%); /* 호버 시 배경색 변경 */
+    text-decoration: underline; /* 호버 시 밑줄 추가 */
+}

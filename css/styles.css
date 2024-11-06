@@ -1,0 +1,89 @@
+/* 기본 바디 스타일 */
+body {
+    font-family: Arial, sans-serif; /* 기본 글꼴 설정 */
+    margin: 0; /* 기본 여백 제거 */
+    padding: 0; /* 기본 패딩 제거 */
+    background-color: #e4e4e4; /* 배경색 설정 */
+}
+
+/* 헤더 스타일 */
+header {
+    background: #333; /* 배경색 설정 */
+    color: #fff; /* 글자색 설정 */
+    padding: 10px 0; /* 위아래 패딩 설정 */
+    text-align: center; /* 중앙 정렬 */
+}
+
+/* 네비게이션 리스트 스타일 */
+nav ul {
+    list-style: none; /* 기본 리스트 스타일 제거 */
+    padding: 0; /* 패딩 제거 */
+}
+
+/* 네비게이션 리스트 항목 스타일 */
+nav ul li {
+    display: inline; /* 인라인으로 표시 */
+    margin: 0 15px; /* 좌우 여백 설정 */
+}
+
+/* 네비게이션 링크 스타일 */
+nav a {
+    color: #fff; /* 글자색 설정 */
+    text-decoration: none; /* 밑줄 제거 */
+}
+
+/* 메인 컨텐츠 스타일 */
+main {
+    padding: 20px; /* 패딩 설정 */
+}
+
+/* 제목 스타일 */
+h2 {
+    color: #333; /* 글자색 설정 */
+}
+
+/* 공통 아티클 스타일 */
+article, .intro, .highlights, .blog-links, .travel-tips {
+    margin-bottom: 20px; /* 아래 여백 설정 */
+    background: #fff; /* 배경색 설정 */
+    padding: 15px; /* 패딩 설정 */
+    border-radius: 5px; /* 모서리 둥글게 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+}
+
+/* 이미지 스타일 */
+.travel-image {
+    width: 100%; /* 부모 요소에 맞게 조정 */
+    height: auto; /* 비율 유지 */
+    border-radius: 5px; /* 모서리 둥글게 */
+}
+
+/* 리스트 스타일 */
+ul {
+    list-style-type: none; /* 기본 리스트 스타일 제거 */
+    padding: 0; /* 패딩 제거 */
+}
+
+/* 리스트 항목 스타일 */
+ul li {
+    margin: 5px 0; /* 위아래 여백 설정 */
+}
+
+/* 링크 스타일 */
+a {
+    color: #007BFF; /* 링크 색상 설정 */
+    text-decoration: none; /* 밑줄 제거 */
+}
+
+/* 링크 호버 효과 */
+a:hover {
+    text-decoration: underline; /* 호버 시 밑줄 추가 */
+}
+
+/* 푸터 스타일 */
+footer {
+    text-align: center; /* 중앙 정렬 */
+    padding: 10px; /* 패딩 설정 */
+    background: #333; /* 배경색 설정 */
+    color: #fff; /* 글자색 설정 */
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>여행 일기</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>지또의 여행 일기</h1>
+        <nav>
+            <ul>
+                <li><a href="travel.html">여행지</a></li>
+                <li><a href="main.html">홈</a></li>               
+                <li><a href="photo.html">사진 갤러리</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- 소개 섹션 -->
+        <section class="intro">
+            <h2>소개</h2>
+            <p>여행을 좋아하는 지또입니다.</p>
+            <p>제가 갔던 좋아하는 곳들을 추억으로 남기고 싶어서 제작한 웹사이트입니다.</p>
+        </section>
+
+        <!-- 여행 블로그 링크 섹션 -->
+        <section class="blog-links">
+            <h2>여행 참고링크</h2>
+            <ul>
+                <li><a href="https://mytravelblog.com" target="_blank">내 여행 블로그</a></li>
+                <li><a href="https://instagram.com/mytravel" target="_blank">인스타그램</a></li>
+            </ul>
+        </section>
+
+        <!-- 게시글 작성 섹션 -->
+        <section class="post-form">
+            <h2>게시판 작성</h2>
+            <form id="postForm">
+                <input type="text" id="title" placeholder="제목" required>
+                <input type="text" id="content" placeholder="내용" required>
+                <button type="submit">게시글 작성</button>
+            </form>
+        </section>
+
+        <section class="posts">
+            <h2>게시판 목록</h2>
+            <div id="postList"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>2310056 신지수</p>
+    </footer>
+</body>
+</html>

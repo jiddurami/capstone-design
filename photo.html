@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>여행 일기</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/photo.css" />
+    <script src="js/photo.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>지또의 여행 일기</h1>
+      <nav>
+        <ul>
+          <li><a href="travel.html">여행지</a></li>
+          <li><a href="main.html">홈</a></li>
+          <li><a href="photo.html">사진 갤러리</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2>사진 카테고리</h2>
+      <button onclick="showCategory('in')">국내</button>
+      <button onclick="showCategory('out')">국외</button>
+
+      <div class="gallery" id="domesticGallery" style="display: none">
+        <!-- 국내 갤러리 -->
+        <h3>국내 사진</h3>
+        <button
+          id="jejuButton"
+          style="display: none"
+          onclick="showCategory('jejudo')"
+        >
+          제주도
+        </button>
+
+        <div class="photo jeju" style="display: none">
+          <img src="img/제주도 (1).jpg" alt="제주도 사진1">
+          <img src="img/제주도 (2).jpg" alt="제주도 사진2">
+          <img src="img/제주도 (3).jpg" alt="제주도 사진3">
+          <img src="img/제주도 (4).jpg" alt="제주도 사진4">
+          <img src="img/제주도 (5).jpg" alt="제주도 사진5">
+          <img src="img/제주도 (6).jpg" alt="제주도 사진6">
+          <img src="img/제주도 (7).jpg" alt="제주도 사진7">
+          <img src="img/제주도 (8).jpg" alt="제주도 사진8">
+          <img src="img/제주도 (9).jpg" alt="제주도 사진9">
+          <img src="img/제주도 (10).jpg" alt="제주도 사진10">
+          <img src="img/제주도 (11).jpg" alt="제주도 사진11">
+          <img src="img/제주도 (12).jpg" alt="제주도 사진12">
+          <img src="img/제주도 (13).jpg" alt="제주도 사진13">
+          <img src="img/제주도 (14).jpg" alt="제주도 사진14">
+          <img src="img/제주도 (15).jpg" alt="제주도 사진15">
+          <img src="img/제주도 (16).jpg" alt="제주도 사진16">
+          <img src="img/제주도 (17).jpg" alt="제주도 사진17">
+          <img src="img/제주도 (18).jpg" alt="제주도 사진18">
+          <img src="img/제주도 (19).jpg" alt="제주도 사진19">
+          <img src="img/제주도 (20).jpg" alt="제주도 사진20">
+          <img src="img/제주도 (21).jpg" alt="제주도 사진21">
+          <img src="img/제주도 (22).jpg" alt="제주도 사진22">
+          <img src="img/제주도 (23).jpg" alt="제주도 사진23">
+          <img src="img/제주도 (24).jpg" alt="제주도 사진24">
+          <img src="img/제주도 (25).jpg" alt="제주도 사진25">
+          <img src="img/제주도 (26).jpg" alt="제주도 사진26">
+          <img src="img/제주도 (27).jpg" alt="제주도 사진27">
+          <img src="img/제주도 (28).jpg" alt="제주도 사진28">
+          <img src="img/제주도 (29).jpg" alt="제주도 사진29">
+          <img src="img/제주도 (30).jpg" alt="제주도 사진30">
+          <img src="img/제주도 (31).jpg" alt="제주도 사진31">
+          <img src="img/제주도 (32).jpg" alt="제주도 사진32">
+          <img src="img/제주도 (33).jpg" alt="제주도 사진33">
+          <img src="img/제주도 (34).jpg" alt="제주도 사진34">
+          <img src="img/제주도 (35).jpg" alt="제주도 사진35">
+          <img src="img/제주도 (36).jpg" alt="제주도 사진36">
+          <img src="img/제주도 (37).jpg" alt="제주도 사진37">
+          <img src="img/제주도 (38).jpg" alt="제주도 사진38">
+          <img src="img/제주도 (39).jpg" alt="제주도 사진39">
+          <img src="img/제주도 (40).jpg" alt="제주도 사진40">
+
+
+        </div>
+      </div>
+
+      <div class="gallery" id="foreignGallery" style="display: none">
+        <!-- 국외 갤러리 -->
+        <h3>국외 사진</h3>
+        <div style="display: flex; gap: 5px">
+          <button
+            id="malaysiaButton"
+            style="display: none"
+            onclick="showCategory('malaysia')"
+          >
+            말레이시아
+          </button>
+          <button
+            id="japanButton"
+            style="display: none"
+            onclick="showCategory('japan')"
+          >
+            일본
+          </button>
+          <button
+            id="bangkokButton"
+            style="display: none"
+            onclick="showCategory('bangkok')"
+          >
+            방콕
+          </button>
+        </div>
+        <div class="photo malaysia" style="display: none">
+          <img src="img/말레이시아 (1).jpg" alt="말레이시아 사진1" />
+          <img src="img/말레이시아 (2).jpg" alt="말레이시아 사진2" />
+          <img src="img/말레이시아 (3).jpg" alt="말레이시아 사진3" />
+          <img src="img/말레이시아 (4).jpg" alt="말레이시아 사진4" />
+          <img src="img/말레이시아 (5).jpg" alt="말레이시아 사진5" />
+          <img src="img/말레이시아 (6).jpg" alt="말레이시아 사진6" />
+          <img src="img/말레이시아 (7).jpg" alt="말레이시아 사진7" />
+          <img src="img/말레이시아 (8).jpg" alt="말레이시아 사진8" />
+          <img src="img/말레이시아 (9).jpg" alt="말레이시아 사진9" />
+          <img src="img/말레이시아 (10).jpg" alt="말레이시아 사진10" />
+          <img src="img/말레이시아 (11).jpg" alt="말레이시아 사진11" />
+          <img src="img/말레이시아 (12).jpg" alt="말레이시아 사진12" />
+          <img src="img/말레이시아 (13).jpg" alt="말레이시아 사진13" />
+          <img src="img/말레이시아 (14).jpg" alt="말레이시아 사진14" />
+          <img src="img/말레이시아 (15).jpg" alt="말레이시아 사진15" />
+          <img src="img/말레이시아 (16).jpg" alt="말레이시아 사진16" />
+          <img src="img/말레이시아 (17).jpg" alt="말레이시아 사진17" />
+          <img src="img/말레이시아 (18).jpg" alt="말레이시아 사진18" />
+          <img src="img/말레이시아 (19).jpg" alt="말레이시아 사진19" />
+          <img src="img/말레이시아 (20).jpg" alt="말레이시아 사진20" />
+          <img src="img/말레이시아 (21).jpg" alt="말레이시아 사진21" />
+          <img src="img/말레이시아 (22).jpg" alt="말레이시아 사진22" />
+          <img src="img/말레이시아 (23).jpg" alt="말레이시아 사진23" />
+          <img src="img/말레이시아 (24).jpg" alt="말레이시아 사진24" />
+          <img src="img/말레이시아 (25).jpg" alt="말레이시아 사진25" />
+          <img src="img/말레이시아 (26).jpg" alt="말레이시아 사진26" />
+          <img src="img/말레이시아 (27).jpg" alt="말레이시아 사진27" />
+          <img src="img/말레이시아 (28).jpg" alt="말레이시아 사진28" />
+          <img src="img/말레이시아 (29).jpg" alt="말레이시아 사진29" />
+          <img src="img/말레이시아 (30).jpg" alt="말레이시아 사진30" />
+          <img src="img/말레이시아 (31).jpg" alt="말레이시아 사진31" />
+          <img src="img/말레이시아 (32).jpg" alt="말레이시아 사진32" />
+          <img src="img/말레이시아 (33).jpg" alt="말레이시아 사진33" />
+          <img src="img/말레이시아 (34).jpg" alt="말레이시아 사진34" />
+          <img src="img/말레이시아 (35).jpg" alt="말레이시아 사진35" />
+          <img src="img/말레이시아 (36).jpg" alt="말레이시아 사진36" />
+          <img src="img/말레이시아 (37).jpg" alt="말레이시아 사진37" />
+          <img src="img/말레이시아 (38).jpg" alt="말레이시아 사진38" />
+          <img src="img/말레이시아 (39).jpg" alt="말레이시아 사진39" />
+          <img src="img/말레이시아 (40).jpg" alt="말레이시아 사진40" />
+          <img src="img/말레이시아 (41).jpg" alt="말레이시아 사진41" />
+          <img src="img/말레이시아 (42).jpg" alt="말레이시아 사진42" />
+          <img src="img/말레이시아 (43).jpg" alt="말레이시아 사진43" />
+          <img src="img/말레이시아 (44).jpg" alt="말레이시아 사진44" />
+          <img src="img/말레이시아 (45).jpg" alt="말레이시아 사진45" />
+          <img src="img/말레이시아 (46).jpg" alt="말레이시아 사진46" />
+          <img src="img/말레이시아 (47).jpg" alt="말레이시아 사진47" />
+          <img src="img/말레이시아 (48).jpg" alt="말레이시아 사진48" />
+          <img src="img/말레이시아 (49).jpg" alt="말레이시아 사진49" />
+          <img src="img/말레이시아 (50).jpg" alt="말레이시아 사진50" />
+          <img src="img/말레이시아 (51).jpg" alt="말레이시아 사진51" />
+          <img src="img/말레이시아 (52).jpg" alt="말레이시아 사진52" />
+          <img src="img/말레이시아 (53).jpg" alt="말레이시아 사진53" />
+          <img src="img/말레이시아 (54).jpg" alt="말레이시아 사진54" />
+          <img src="img/말레이시아 (55).jpg" alt="말레이시아 사진55" />
+          <img src="img/말레이시아 (56).jpg" alt="말레이시아 사진56" />
+          <img src="img/말레이시아 (57).jpg" alt="말레이시아 사진57" />
+          <img src="img/말레이시아 (58).jpg" alt="말레이시아 사진58" />
+          <img src="img/말레이시아 (59).jpg" alt="말레이시아 사진59" />
+          <img src="img/말레이시아 (60).jpg" alt="말레이시아 사진60" />
+          <img src="img/말레이시아 (61).jpg" alt="말레이시아 사진61" />
+          <img src="img/말레이시아 (62).jpg" alt="말레이시아 사진62" />
+          <img src="img/말레이시아 (63).jpg" alt="말레이시아 사진63" />
+          <img src="img/말레이시아 (64).jpg" alt="말레이시아 사진64" />
+          <img src="img/말레이시아 (65).jpg" alt="말레이시아 사진65" />
+          <img src="img/말레이시아 (66).jpg" alt="말레이시아 사진66" />
+          <img src="img/말레이시아 (67).jpg" alt="말레이시아 사진67" />
+          <img src="img/말레이시아 (68).jpg" alt="말레이시아 사진68" />
+          <img src="img/말레이시아 (69).jpg" alt="말레이시아 사진69" />
+          <img src="img/말레이시아 (70).jpg" alt="말레이시아 사진70" />
+          <img src="img/말레이시아 (71).jpg" alt="말레이시아 사진71" />
+          <img src="img/말레이시아 (72).jpg" alt="말레이시아 사진72" />
+          <img src="img/말레이시아 (73).jpg" alt="말레이시아 사진73" />
+          <img src="img/말레이시아 (74).jpg" alt="말레이시아 사진74" />
+          <img src="img/말레이시아 (75).jpg" alt="말레이시아 사진75" />
+          <img src="img/말레이시아 (76).jpg" alt="말레이시아 사진76" />
+          <img src="img/말레이시아 (77).jpg" alt="말레이시아 사진77" />
+          <img src="img/말레이시아 (78).jpg" alt="말레이시아 사진78" />
+          <img src="img/말레이시아 (79).jpg" alt="말레이시아 사진79" />
+          <img src="img/말레이시아 (80).jpg" alt="말레이시아 사진80" />
+          <img src="img/말레이시아 (81).jpg" alt="말레이시아 사진81" />
+          <img src="img/말레이시아 (82).jpg" alt="말레이시아 사진82" />
+          <img src="img/말레이시아 (83).jpg" alt="말레이시아 사진83" />
+          <img src="img/말레이시아 (84).jpg" alt="말레이시아 사진84" />
+          <img src="img/말레이시아 (85).jpg" alt="말레이시아 사진85" />
+          <img src="img/말레이시아 (86).jpg" alt="말레이시아 사진86" />
+          <img src="img/말레이시아 (87).jpg" alt="말레이시아 사진87" />
+          <img src="img/말레이시아 (88).jpg" alt="말레이시아 사진88" />
+          <img src="img/말레이시아 (89).jpg" alt="말레이시아 사진89" />
+          <img src="img/말레이시아 (90).jpg" alt="말레이시아 사진90" />
+        </div>
+        <div class="photo japan" style="display: none">
+          <h4>도쿄</h4>
+          <img src="img/도쿄 (1).jpg" alt="일본 사진1" />
+          <img src="img/도쿄 (2).jpg" alt="일본 사진2" />
+          <img src="img/도쿄 (3).jpg" alt="일본 사진3" />
+          <img src="img/도쿄 (4).jpg" alt="일본 사진4" />
+          <img src="img/도쿄 (5).jpg" alt="일본 사진5" />
+          <img src="img/도쿄 (6).jpg" alt="일본 사진6" />
+          <img src="img/도쿄 (7).jpg" alt="일본 사진7" />
+          <img src="img/도쿄 (8).jpg" alt="일본 사진8" />
+          <img src="img/도쿄 (9).jpg" alt="일본 사진9" />
+          <img src="img/도쿄 (10).jpg" alt="일본 사진10" />
+          <img src="img/도쿄 (11).jpg" alt="일본 사진11" />
+          <img src="img/도쿄 (12).jpg" alt="일본 사진12" />
+          <img src="img/도쿄 (13).jpg" alt="일본 사진13" />
+          <img src="img/도쿄 (14).jpg" alt="일본 사진14" />
+          <img src="img/도쿄 (15).jpg" alt="일본 사진15" />
+          <img src="img/도쿄 (16).jpg" alt="일본 사진16" />
+          <img src="img/도쿄 (17).jpg" alt="일본 사진17" />
+          <img src="img/도쿄 (18).jpg" alt="일본 사진18" />
+          <img src="img/도쿄 (19).jpg" alt="일본 사진19" />
+          <img src="img/도쿄 (20).jpg" alt="일본 사진20" />
+          <img src="img/도쿄 (21).jpg" alt="일본 사진21" />
+          <img src="img/도쿄 (22).jpg" alt="일본 사진22" />
+          <img src="img/도쿄 (23).jpg" alt="일본 사진23" />
+          <img src="img/도쿄 (24).jpg" alt="일본 사진24" />
+          <img src="img/도쿄 (25).jpg" alt="일본 사진25" />
+          <img src="img/도쿄 (26).jpg" alt="일본 사진26" />
+          <img src="img/도쿄 (27).jpg" alt="일본 사진27" />
+          <img src="img/도쿄 (28).jpg" alt="일본 사진28" />
+          <img src="img/도쿄 (29).jpg" alt="일본 사진29" />
+          <img src="img/도쿄 (30).jpg" alt="일본 사진30" />
+          <h4>삿포로</h4>
+          <img src="img/삿포로 (1).jpg" alt="삿포로 사진1">
+          <img src="img/삿포로 (2).jpg" alt="삿포로 사진2">
+          <img src="img/삿포로 (3).jpg" alt="삿포로 사진3">
+          <img src="img/삿포로 (4).jpg" alt="삿포로 사진4">
+          <img src="img/삿포로 (5).jpg" alt="삿포로 사진5">
+          <img src="img/삿포로 (6).jpg" alt="삿포로 사진6">
+          <img src="img/삿포로 (7).jpg" alt="삿포로 사진7">
+          <img src="img/삿포로 (8).jpg" alt="삿포로 사진8">
+          <img src="img/삿포로 (9).jpg" alt="삿포로 사진9">
+          <img src="img/삿포로 (10).jpg" alt="삿포로 사진10">
+          <img src="img/삿포로 (11).jpg" alt="삿포로 사진11">
+          <img src="img/삿포로 (12).jpg" alt="삿포로 사진12">
+          <img src="img/삿포로 (13).jpg" alt="삿포로 사진13">
+          <img src="img/삿포로 (14).jpg" alt="삿포로 사진14">
+          <img src="img/삿포로 (15).jpg" alt="삿포로 사진15">
+          <img src="img/삿포로 (16).jpg" alt="삿포로 사진16">
+          <img src="img/삿포로 (17).jpg" alt="삿포로 사진17">
+          <img src="img/삿포로 (18).jpg" alt="삿포로 사진18">
+          <img src="img/삿포로 (19).jpg" alt="삿포로 사진19">
+          <img src="img/삿포로 (20).jpg" alt="삿포로 사진20">
+          <img src="img/삿포로 (21).jpg" alt="삿포로 사진21">
+          <img src="img/삿포로 (22).jpg" alt="삿포로 사진22">
+          <img src="img/삿포로 (23).jpg" alt="삿포로 사진23">
+          <img src="img/삿포로 (24).jpg" alt="삿포로 사진24">
+          <img src="img/삿포로 (25).jpg" alt="삿포로 사진25">
+          <img src="img/삿포로 (26).jpg" alt="삿포로 사진26">
+          <img src="img/삿포로 (27).jpg" alt="삿포로 사진27">
+          <img src="img/삿포로 (28).jpg" alt="삿포로 사진28">
+          <img src="img/삿포로 (29).jpg" alt="삿포로 사진29">
+          <img src="img/삿포로 (30).jpg" alt="삿포로 사진30">
+          <img src="img/삿포로 (31).jpg" alt="삿포로 사진31">
+          <img src="img/삿포로 (32).jpg" alt="삿포로 사진32">
+          <img src="img/삿포로 (33).jpg" alt="삿포로 사진33">
+          <img src="img/삿포로 (34).jpg" alt="삿포로 사진34">
+          <img src="img/삿포로 (35).jpg" alt="삿포로 사진35">
+          <img src="img/삿포로 (36).jpg" alt="삿포로 사진36">
+          <img src="img/삿포로 (37).jpg" alt="삿포로 사진37">
+          <img src="img/삿포로 (38).jpg" alt="삿포로 사진38">
+          <img src="img/삿포로 (39).jpg" alt="삿포로 사진39">
+          <img src="img/삿포로 (40).jpg" alt="삿포로 사진40">
+          <img src="img/삿포로 (41).jpg" alt="삿포로 사진41">
+          <img src="img/삿포로 (42).jpg" alt="삿포로 사진42">
+          <img src="img/삿포로 (43).jpg" alt="삿포로 사진43">
+          <img src="img/삿포로 (44).jpg" alt="삿포로 사진44">
+          <img src="img/삿포로 (45).jpg" alt="삿포로 사진45">
+          <img src="img/삿포로 (46).jpg" alt="삿포로 사진46">
+          <img src="img/삿포로 (47).jpg" alt="삿포로 사진47">
+          <img src="img/삿포로 (48).jpg" alt="삿포로 사진48">
+          <img src="img/삿포로 (49).jpg" alt="삿포로 사진49">
+          <img src="img/삿포로 (50).jpg" alt="삿포로 사진50">
+          <img src="img/삿포로 (51).jpg" alt="삿포로 사진51">
+          <img src="img/삿포로 (52).jpg" alt="삿포로 사진52">
+          <img src="img/삿포로 (53).jpg" alt="삿포로 사진53">
+          <img src="img/삿포로 (54).jpg" alt="삿포로 사진54">
+          <img src="img/삿포로 (55).jpg" alt="삿포로 사진55">
+          <img src="img/삿포로 (56).jpg" alt="삿포로 사진56">
+          <img src="img/삿포로 (57).jpg" alt="삿포로 사진57">
+          <img src="img/삿포로 (58).jpg" alt="삿포로 사진58">
+          <img src="img/삿포로 (59).jpg" alt="삿포로 사진59">
+          <img src="img/삿포로 (60).jpg" alt="삿포로 사진60">
+          <img src="img/삿포로 (61).jpg" alt="삿포로 사진61">
+          <img src="img/삿포로 (62).jpg" alt="삿포로 사진62">
+          <img src="img/삿포로 (63).jpg" alt="삿포로 사진63">
+          <img src="img/삿포로 (64).jpg" alt="삿포로 사진64">
+          <img src="img/삿포로 (65).jpg" alt="삿포로 사진65">
+          <img src="img/삿포로 (66).jpg" alt="삿포로 사진66">
+          <img src="img/삿포로 (67).jpg" alt="삿포로 사진67">
+          <img src="img/삿포로 (68).jpg" alt="삿포로 사진68">
+          <img src="img/삿포로 (69).jpg" alt="삿포로 사진69">
+          <img src="img/삿포로 (70).jpg" alt="삿포로 사진70">
+        </div>
+        <div class="photo bangkok" style="display: none">
+          <img src="img/방콕 (1).jpg" alt="방콕 사진1" />
+          <img src="img/방콕 (2).jpg" alt="방콕 사진2" />
+          <img src="img/방콕 (3).jpg" alt="방콕 사진3" />
+          <img src="img/방콕 (4).jpg" alt="방콕 사진4" />
+          <img src="img/방콕 (5).jpg" alt="방콕 사진5" />
+          <img src="img/방콕 (6).jpg" alt="방콕 사진6" />
+          <img src="img/방콕 (7).jpg" alt="방콕 사진7" />
+          <img src="img/방콕 (8).jpg" alt="방콕 사진8" />
+          <img src="img/방콕 (9).jpg" alt="방콕 사진9" />
+          <img src="img/방콕 (10).jpg" alt="방콕 사진10" />
+          <img src="img/방콕 (11).jpg" alt="방콕 사진11" />
+          <img src="img/방콕 (12).jpg" alt="방콕 사진12" />
+          <img src="img/방콕 (13).jpg" alt="방콕 사진13" />
+          <img src="img/방콕 (14).jpg" alt="방콕 사진14" />
+          <img src="img/방콕 (15).jpg" alt="방콕 사진15" />
+          <img src="img/방콕 (16).jpg" alt="방콕 사진16" />
+          <img src="img/방콕 (17).jpg" alt="방콕 사진17" />
+          <img src="img/방콕 (18).jpg" alt="방콕 사진18" />
+          <img src="img/방콕 (19).jpg" alt="방콕 사진19" />
+          <img src="img/방콕 (20).jpg" alt="방콕 사진20" />
+          <img src="img/방콕 (21).jpg" alt="방콕 사진21" />
+          <img src="img/방콕 (22).jpg" alt="방콕 사진22" />
+          <img src="img/방콕 (23).jpg" alt="방콕 사진23" />
+          <img src="img/방콕 (24).jpg" alt="방콕 사진24" />
+          <img src="img/방콕 (25).jpg" alt="방콕 사진25" />
+          <img src="img/방콕 (26).jpg" alt="방콕 사진26" />
+          <img src="img/방콕 (27).jpg" alt="방콕 사진27" />
+          <img src="img/방콕 (28).jpg" alt="방콕 사진28" />
+          <img src="img/방콕 (29).jpg" alt="방콕 사진29" />
+          <img src="img/방콕 (30).jpg" alt="방콕 사진30" />
+          <img src="img/방콕 (31).jpg" alt="방콕 사진31" />
+          <img src="img/방콕 (32).jpg" alt="방콕 사진32" />
+          <img src="img/방콕 (33).jpg" alt="방콕 사진33" />
+          <img src="img/방콕 (34).jpg" alt="방콕 사진34" />
+          <img src="img/방콕 (35).jpg" alt="방콕 사진35" />
+          <img src="img/방콕 (36).jpg" alt="방콕 사진36" />
+          <img src="img/방콕 (37).jpg" alt="방콕 사진37" />
+          <img src="img/방콕 (38).jpg" alt="방콕 사진38" />
+          <img src="img/방콕 (39).jpg" alt="방콕 사진39" />
+          <img src="img/방콕 (40).jpg" alt="방콕 사진40" />
+          <img src="img/방콕 (41).jpg" alt="방콕 사진41" />
+          <img src="img/방콕 (42).jpg" alt="방콕 사진42" />
+          <img src="img/방콕 (43).jpg" alt="방콕 사진43" />
+          <img src="img/방콕 (44).jpg" alt="방콕 사진44" />
+          <img src="img/방콕 (45).jpg" alt="방콕 사진45" />
+          <img src="img/방콕 (46).jpg" alt="방콕 사진46" />
+          <img src="img/방콕 (47).jpg" alt="방콕 사진47" />
+          <img src="img/방콕 (48).jpg" alt="방콕 사진48" />
+          <img src="img/방콕 (49).jpg" alt="방콕 사진49" />
+          <img src="img/방콕 (50).jpg" alt="방콕 사진50" />
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>2310056 신지수</p>
+    </footer>
+  </body>
+</html>

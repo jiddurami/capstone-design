@@ -34,19 +34,19 @@ nav a {
 
 /* 메인 컨텐츠 스타일 */
 main {
-    padding: 20px; /* 패딩 설정 */
+    padding: 20px;
 }
 
 /* 제목 스타일 */
 h2 {
-    color: #333; /* 글자색 설정 */
+    color: #333;
 }
 
 /* 공통 아티클 스타일 */
 article, .intro, .highlights, .blog-links, .travel-tips {
     margin-bottom: 20px; /* 아래 여백 설정 */
     background: #fff; /* 배경색 설정 */
-    padding: 15px; /* 패딩 설정 */
+    padding: 15px;
     border-radius: 5px; /* 모서리 둥글게 */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
 }
@@ -86,4 +86,14 @@ footer {
     padding: 10px; /* 패딩 설정 */
     background: #333; /* 배경색 설정 */
     color: #fff; /* 글자색 설정 */
+}
+
+.link {
+    color: #7a1dfd; /* 링크 색상 */
+    margin-left: 10px; /* 오른쪽 여백 추가 */
+}
+
+.link:hover {
+    background-color: hsl(218, 100%, 93%); /* 호버 시 배경색 변경 */
+    text-decoration: underline; /* 호버 시 밑줄 추가 */
 }

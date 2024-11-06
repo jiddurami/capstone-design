@@ -12,7 +12,7 @@ h2 {
 }
 
 input[type="text"] {
-    width: calc(50% - 32px); /* 너비 100%에서 패딩을 뺌 */
+    width: calc(80% - 32px); /* 너비 100%에서 패딩을 뺌 */
     padding: 10px; /* 안쪽 여백 */
     margin: 10px; /* 위아래 여백 */
     border: 1px solid #28363f; /* 테두리 */
